@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> 
+    td{
+        background-color: red;
+        color: yellow;
+    }
+</style>
+<body>
+
+   <table border="5" cellspacing="0" cellpadding="10px">
+    <tr>
+        <td>name</td>
+        <td>age</td>
+        <td>hindi</td>
+        <td>maths</td>
+        <td>bio</td>
+    </tr>
+    <tr>
+        <td id="name"></td>
+        <td id="age"></td>
+        <td id="hindi"></td>
+        <td id="maths"></td>
+        <td id="bio"></td>
+    </tr>
+   </table>
+
+<script>
+
+
+// let clss = "10";
+// let hin = 50;
+//  let eng = 48;
+//  let math = 46;
+//  let eco = 44;
+//  let bio = 45;
+//  let sst = 90;
+//  let total= hin+eng+math+eco+bio;
+//  let per = total/5;
+ 
+
+//  document.write("Name :"+name+"<br>"+"clss :"+clss+"<br>"+"hin :"+hin+"<br>"+"eng :"+eng+"<br>"+
+//  "math : "+math+"<br>"+"eco :"+eco+"<br>"+"bio :"+bio+"<br>"+"sst :"+sst+"<br>"+"total :"+total+"<br>"+"per :"+per+"<br>");
+
+
+let name = prompt("enter your name");
+let age = prompt("enter your age");
+let hin = prompt("enter your hindi number");
+let maths = prompt("enter your maths number");
+let bio = prompt("enter your biologi ke numbet hello");
+
+// document.write("Name :"+name+"<br>"+"Age :"+age+"<br>"+"Hindi :"+hin);
+
+document.querySelector("#name").innerHTML = name;
+document.querySelector("#age").innerHTML = age;
+document.querySelector("#hindi").innerHTML = hin;
+document.querySelector("#maths").innerHTML = maths;
+document.querySelector("#bio").innerHTML = bio;
+
+
+
+</script>
+
+
+
+    
+</body>
+</html>

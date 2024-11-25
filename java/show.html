@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+</head>
+<style>
+    button{
+        width: 30vh;
+        height: 10vh;
+        border: 3px solid black;
+        border-radius: 20px;
+        background-color: red;
+        cursor: pointer;
+    }
+    .box{
+        background-color:yellow;
+        display: none;
+    }
+    button:hover{
+        background-color: pink;
+    }
+</style>
+<body>
+    <button class="animate__animated animate__bounce">OPEN</button>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est distinctio deleniti nulla quo quas, necessitatibus nobis sunt consectetur reprehenderit molestiae, consequatur blanditiis animi. At similique repellendus dignissimos quis dolorum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est distinctio deleniti nulla quo quas, necessitatibus nobis sunt consectetur reprehenderit molestiae, consequatur blanditiis animi. At similique repellendus dignissimos quis dolorum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est distinctio deleniti nulla quo quas, necessitatibus nobis sunt consectetur reprehenderit molestiae, consequatur blanditiis animi. At similique repellendus dignissimos quis dolorum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est distinctio deleniti nulla quo quas, necessitatibus nobis sunt consectetur reprehenderit molestiae, consequatur blanditiis animi. At similique repellendus dignissimos quis dolorum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est distinctio deleniti nulla quo quas, necessitatibus nobis sunt consectetur reprehenderit molestiae, consequatur blanditiis animi. At similique repellendus dignissimos quis dolorum.
+    </div>
+    <script>
+let cat = document.querySelector("button");
+cat.addEventListener("click",show);
+
+function show(){
+    let box = document.querySelector(".box");
+    if(box.style.display=="none"){
+        box. style. display = "block";
+        cat.innerHTML="CLOSE";
+    }else{
+        box.style.display ="none";
+        cat.innerHTML="OPEN";
+    }
+}   
+
+
+    </script>
+</body>
+</html>

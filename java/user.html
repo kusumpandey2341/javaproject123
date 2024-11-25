@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="box"> </div>
+     <button onclick=" show()">show</button> 
+    <button onclick=" hide()">hide</button> 
+    <!-- <button onclick=" toggle()">toggle</button>
+ <button onclick="not()">not</button>
+   <button onclick="hide()">hide</button>
+   <button onclick="bot()">bot</button> -->
+
+ 
+
+    <script>
+
+          function show(){
+            let x = document.querySelector(".box");
+            x.style.width = "100px";
+            x.style.height="100px";
+            x.style.backgroundColor = "red";
+            x.style.border= "5px solid black ";
+
+          }
+
+          function hide(){
+            let x = document.querySelector(".box");
+            x.style.display = "none";
+          }
+
+          
+          // function not(){
+          //   let x = document.querySelector(".box");
+          //   x.style.width = "300px";
+          //   x.style.height = "300px";
+          //   x.style.backgroundColor = "red";
+          // }
+          function hide(){
+            let x = document.querySelector(".box");
+            x.style.backgroundColor =  "black" ;  
+                 }
+// function bot(){
+//   let x = document.querySelector(".box");
+//   x.style.backgroundColor = "yellow";
+// }
+
+
+        // function toggle() {
+        //     let x = document.querySelector(".box");
+        //     if (x.style.display == "none") {
+        //         x.style.display = "none";
+        //     } else {
+        //        x.style.display = "blackl";
+
+        //     }
+        // }
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

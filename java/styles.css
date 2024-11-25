@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00cfcf; 
+    color: #fff;
+  }
+  
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #333; 
+  }
+  
+   .contact-info p, .about-company p {
+    margin: 10px 0;
+    font-size: 25px;
+  }
+  
+  .contact-info {
+    max-width: 50%;
+  }
+  
+  .about-company {
+    max-width: 50%;
+  }
+  
+
+  
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .icon {
+    margin-right: 8px;
+  } 

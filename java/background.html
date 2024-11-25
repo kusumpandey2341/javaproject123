@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .box{
+            width: 100%;
+            height: 100vh;
+            background-image: url("saved.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding: 40px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1,.about{
+            margin: 30px;
+        }
+
+        h1::after{
+            content: " ";
+            width: 100px;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            top: 210px;
+            left: 400px;
+        }
+
+        h1{
+            text-shadow: -2px -2px 5px red;
+        }
+
+        /* .underline{
+            width: 100px;
+            height: 2px;
+            background-color: black;
+            margin-top: -30px;
+            margin-left: 100px;
+        } */
+      
+       
+    </style>
+</head>
+<body>
+
+
+
+   <div class="box">
+        
+         <h1>About</h1>
+         <!-- <div class="underline"></div> -->
+        <div class="about">
+            <h4>Hii I am priya goswami</h4>
+            <p>i am web Developer</p>
+        </div>
+
+   </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .bulb {
+            width: 100px;
+            height: 150px;
+            background-color: white;
+            border-radius: 80%;
+            border: 3px solid black;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .base {
+            width: 50px;
+            height: 20px;
+            background-color: gray;
+            border-radius: 5px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .on {
+            background-color: green;
+            color: white;
+        }
+        .off {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="bulb" id="bulb">
+        <div class="base"></div>
+    </div>
+    <div class="buttons">
+        <button class="button on" onclick="turnOn()">ON</button>
+        <button class="button off" onclick="turnOff()">OFF</button>
+    </div>
+
+    <script>
+        function turnOn() {
+            document.getElementById('bulb').style.backgroundColor = 'yellow';
+        }
+
+        function turnOff() {
+            document.getElementById('bulb').style.backgroundColor = 'white';
+        }
+    </script>
+</body>
+</html>
